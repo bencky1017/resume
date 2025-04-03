@@ -1,0 +1,794 @@
+{
+    "description": [
+        "文件自动检测类名如下",
+        [
+            "islink",
+            "headpic",
+            "personInfo",
+            "jobOrder",
+            "education",
+            "personCreation",
+            "honorSkills",
+            "workHistory",
+            "personalityAbility",
+            "selfEvaluate"
+        ],
+        "文件版本跳转逻辑",
+        [
+            "必须存在`islink`字段，并且islink.bool默认为false，islink.url默认为空"
+        ]
+    ],
+    "versions": {
+        "v2.1": {
+            "islink": {
+                "bool": false,
+                "url": ""
+            },
+            "headpic": {
+                "title": "陈本奇",
+                "src": "img/bk.png",
+                "alt": "Bencky Chan's Photo"
+            },
+            "personInfo": {
+                "title": "个人信息",
+                "item": [
+                    {
+                        "icon": "img/pj.png",
+                        "label": "姓名",
+                        "field": "name",
+                        "contents": {
+                            "value": "陈本奇",
+                            "sub": "Bencky Chan"
+                        }
+                    },
+                    {
+                        "icon": "img/sj.png",
+                        "label": "手机",
+                        "field": "phone",
+                        "content": "13402590968"
+                    },
+                    {
+                        "icon": "img/yx.png",
+                        "label": "邮箱",
+                        "field": "email",
+                        "content": "bencky1017@qq.com"
+                    },
+                    {
+                        "icon": "img/sr.png",
+                        "label": "生日",
+                        "field": "birthday",
+                        "content": "1998.10.17"
+                    },
+                    {
+                        "删除icon": "img/dw.png",
+                        "删除label": "现居",
+                        "删除field": "location",
+                        "删除content": "江苏省句容市洪武路"
+                    }
+                ]
+            },
+            "jobOrder": {
+                "title": "求职意向",
+                "item": {
+                    "icon": "",
+                    "label": "意向职业",
+                    "field": "phone",
+                    "contents": [
+                        "软件测试工程师",
+                        "自动化测试工程师",
+                        "游戏测试工程师"
+                    ]
+                }
+            },
+            "education": {
+                "title": "教育背景",
+                "item": [
+                    {
+                        "icon": "",
+                        "label": "学校名称",
+                        "field": "school",
+                        "content": "苏州科技大学天平学院"
+                    },
+                    {
+                        "icon": "",
+                        "label": "就读时间",
+                        "field": "period",
+                        "content": "2017.9-2021.7"
+                    },
+                    {
+                        "icon": "",
+                        "label": "所学专业",
+                        "field": "major",
+                        "content": "通信工程"
+                    },
+                    {
+                        "icon": "",
+                        "label": "学历学位",
+                        "field": "degree",
+                        "content": "本科（学信网）"
+                    },
+                    {
+                        "icon": "",
+                        "label": "校园荣誉",
+                        "field": "certificates",
+                        "content": "校级二等奖学金<br/>优秀班干部"
+                    },
+                    {
+                        "icon": "",
+                        "label": "等级证书",
+                        "field": "certificates",
+                        "content": "CET-4，计算机C语言二级"
+                    }
+                ]
+            },
+            "删除personCreation": {
+                "title": "个人作品",
+                "item": [
+                    {
+                        "icon": "",
+                        "label": "HTML",
+                        "field": "",
+                        "content": "个人主页、网页导航、网页解密"
+                    },
+                    {
+                        "icon": "",
+                        "label": "C语言",
+                        "field": "",
+                        "content": "班级通讯录管理系统、EasyX图形化游戏界面"
+                    },
+                    {
+                        "icon": "",
+                        "label": "Python爬虫",
+                        "field": "",
+                        "content": "熊猫音效批量下载器，网易云音乐下载器GUI，壁纸爬虫"
+                    }
+                ]
+            },
+            "ending": {
+                "title": "结束语",
+                "content": "<b>感谢您百忙之中垂阅本人简历！</b>"
+            },
+            "honorSkills": {
+                "title": "专业技能",
+                "item": [
+                    {
+                        "icon": "",
+                        "label": "自动化测试",
+                        "field": "",
+                        "content": "Python（Selenium，Requests）编写自动化脚本"
+                    },
+                    {
+                        "icon": "",
+                        "label": "接口测试",
+                        "field": "",
+                        "content": "ApiPost/Postman，测试用例与Mock数据"
+                    },
+                    {
+                        "icon": "",
+                        "label": "数据库",
+                        "field": "",
+                        "content": "MySQL为主的数据库操作（SQL语句编写），Navicat"
+                    },
+                    {
+                        "icon": "",
+                        "label": "工具",
+                        "field": "",
+                        "content": "PingCode/禅道（缺陷管理），Git/Sourcetree，Linux基本指令"
+                    },
+                    {
+                        "icon": "",
+                        "label": "技术栈",
+                        "field": "",
+                        "contents": [
+                            {
+                                "label": "Python",
+                                "desc": "熟练运用Requests，re，Selenium等库，编写自动化脚本；<br/>使用Python进行数据处理"
+                            },
+                            {
+                                "label": "Web",
+                                "desc": "拥有 HTML5 / CSS3 / Vue3 页面开发经验，独立开发10+网页，掌握页面结构、代码逻辑，便于Bug反推与问题定位"
+                            },
+                            {
+                                "label": "CSS",
+                                "desc": "了解flex布局，grid布局，过渡动画，多媒体查询等，为产品提升易用性"
+                            },
+                            {
+                                "label": "Node.js",
+                                "desc": "搭建本地接口，模拟测试数据"
+                            },
+                            {
+                                "label": "Linux",
+                                "desc": "掌握rm，mv，cd，touch，cat等常用指令，熟练使用终端程序配置环境"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "workHistory": {
+                "title": "工作经历",
+                "item": [
+                    {
+                        "unit": {
+                            "period": "2022.10-2024.9",
+                            "company": "苏州彼立孚数据科技有限公司",
+                            "post": "软件测试工程师"
+                        },
+                        "experience": {
+                            "name": "主要经历",
+                            "desc": [
+                                "1.<b>测试：</b>主导公司30+产品项目全流程测试，设计测试用例2000+条，发现系统Bug 1000+条；",
+                                "2.<b>协作：</b>以用户角度多方面、全覆盖测试产品，与设计、开发人员协作，执行测试；",
+                                "3.<b>Bug：</b>通过PingCode平台管理缺陷生命周期，优化Bug分类标签体系，推动开发团队及时响应，回归测试通过率100%；",
+                                "4.<b>提升：</b>提出10+项产品改进建议（部分被采纳），提高产品易用性，用户满意度得到提升；",
+                                "5.<b>数据：</b>使用ApiPost进行相关接口测试，编写SQL语句对MySQL中的测试数据进行清洗；",
+                                "6.<b>产品：</b>参与多个项目的需求评审会议，从测试角度提出多项风险预警，减少后期需求变更风险；"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": {
+                            "period": "2021.11-2022.8",
+                            "company": "利穗技术(苏州)有限公司",
+                            "post": "软件测试工程师"
+                        },
+                        "experience": {
+                            "name": "经历简述",
+                            "desc": [
+                                "在DeltaV系统中执行软件单元测试、功能测试等工作",
+                                "参与多个项目，负责过单个项目从开发到测试到正式发布的整个流程"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": {
+                            "period": "2020.9-2021.3",
+                            "company": "苏州彩虹糖软件技术有限公司",
+                            "post": "输入法工程师"
+                        },
+                        "experience": {
+                            "name": "经历简述",
+                            "desc": [
+                                "百度输入法功能、特效制作",
+                                "对接百度负责人，对各个模块进行功能测试，缺陷修复等"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "删除personalityAbility": {
+                "title": "性格能力",
+                "item": [
+                    {
+                        "_tag": "personality",
+                        "name": "性格",
+                        "desc": [
+                            "乐观正直，沉着冷静，去繁求简，不拐弯抹角"
+                        ]
+                    },
+                    {
+                        "_tag": "ability",
+                        "name": "能力",
+                        "desc": [
+                            "自学能力强，掌握速度快，善于思考，沟通精简有效",
+                            "喜欢研究软件使用，自己制作工具，对创造性事物感兴趣"
+                        ]
+                    }
+                ]
+            },
+            "selfEvaluate": {
+                "title": "自我评价",
+                "item": [
+                    "◆逻辑严谨，测试覆盖率达到95%",
+                    "◆沟通简洁高效，推动跨岗位、跨部门协作",
+                    "◆动手能力强，建立测试用例知识库，提升团队用例编写效率"
+                ]
+            }
+        },
+        "v2.0": {
+            "islink": {
+                "bool": false,
+                "url": ""
+            },
+            "headpic": {
+                "title": "陈本奇",
+                "src": "img/bk.png",
+                "alt": "Bencky Chan's Photo"
+            },
+            "personInfo": {
+                "title": "个人信息",
+                "item": [
+                    {
+                        "icon": "img/pj.png",
+                        "label": "姓名",
+                        "field": "name",
+                        "contents": {
+                            "value": "陈本奇",
+                            "sub": "Bencky Chan"
+                        }
+                    },
+                    {
+                        "icon": "img/sj.png",
+                        "label": "手机",
+                        "field": "phone",
+                        "content": "13402590968"
+                    },
+                    {
+                        "icon": "img/yx.png",
+                        "label": "邮箱",
+                        "field": "email",
+                        "content": "bencky1017@qq.com"
+                    },
+                    {
+                        "icon": "img/sr.png",
+                        "label": "生日",
+                        "field": "birthday",
+                        "content": "1998.10.17"
+                    },
+                    {
+                        "删除icon": "img/dw.png",
+                        "删除label": "现居",
+                        "删除field": "location",
+                        "删除content": "江苏省句容市洪武路"
+                    }
+                ]
+            },
+            "jobOrder": {
+                "title": "求职意向",
+                "item": {
+                    "icon": "",
+                    "label": "意向职业",
+                    "field": "phone",
+                    "contents": [
+                        "软件测试工程师",
+                        "自动化测试工程师",
+                        "测试开发工程师"
+                    ]
+                }
+            },
+            "education": {
+                "title": "教育背景",
+                "item": [
+                    {
+                        "icon": "",
+                        "label": "学校名称",
+                        "field": "school",
+                        "content": "苏州科技大学天平学院"
+                    },
+                    {
+                        "icon": "",
+                        "label": "就读时间",
+                        "field": "period",
+                        "content": "2017.9-2021.7"
+                    },
+                    {
+                        "icon": "",
+                        "label": "所学专业",
+                        "field": "major",
+                        "content": "通信工程"
+                    },
+                    {
+                        "icon": "",
+                        "label": "学历学位",
+                        "field": "degree",
+                        "content": "本科（学信网）"
+                    }
+                ]
+            },
+            "删除personCreation": {
+                "title": "个人作品",
+                "item": [
+                    {
+                        "icon": "",
+                        "label": "HTML",
+                        "field": "",
+                        "content": "个人主页、网页导航、网页解密"
+                    },
+                    {
+                        "icon": "",
+                        "label": "C语言",
+                        "field": "",
+                        "content": "班级通讯录管理系统、EasyX图形化游戏界面"
+                    },
+                    {
+                        "icon": "",
+                        "label": "Python爬虫",
+                        "field": "",
+                        "content": "熊猫音效批量下载器，网易云音乐下载器GUI，壁纸爬虫"
+                    }
+                ]
+            },
+            "ending": {
+                "title": "结束语",
+                "content": "<b>感谢您百忙之中垂阅本人简历！</b>"
+            },
+            "honorSkills": {
+                "title": "荣誉技能",
+                "item": [
+                    {
+                        "icon": "",
+                        "label": "证书",
+                        "field": "",
+                        "content": "CET-4，计算机C语言二级(NCRE LEVEL2)，“数创杯”大学组优秀奖等"
+                    },
+                    {
+                        "icon": "",
+                        "label": "荣誉",
+                        "field": "",
+                        "content": "获得过“优秀班干部”,“优秀团支书”,“校级二等奖学金”等"
+                    },
+                    {
+                        "icon": "",
+                        "label": "办公",
+                        "field": "",
+                        "content": "精通Word、Excel、PPT等办公软件，编写符合项目交付的测试报告，文档格式规范，风格统一"
+                    },
+                    {
+                        "icon": "",
+                        "label": "软件",
+                        "field": "",
+                        "content": "常用Sourcetree，Navicat，ApiPost，微信开发者工具等软件进行项目测试、数据管理等"
+                    },
+                    {
+                        "icon": "",
+                        "label": "技能",
+                        "field": "",
+                        "contents": [
+                            {
+                                "label": "Python",
+                                "desc": "掌握Python代码编写能力，熟练运用requests,re,os,selenium等库，结合Chrome内核浏览器实现自动化测试功能"
+                            },
+                            {
+                                "label": "HTML5",
+                                "desc": "编写过H5网页，掌握页面结构、代码逻辑，便于Bug反推与问题定位，快速反馈开发人员并进行复测"
+                            },
+                            {
+                                "label": "CSS",
+                                "desc": "了解flex布局，grid布局，过渡动画，多媒体查询等，为产品提升易用性"
+                            },
+                            {
+                                "label": "数据库",
+                                "desc": "熟悉MySQL为主的数据库，编写SQL语句，对测试数据进行筛选测试"
+                            },
+                            {
+                                "label": "Linux",
+                                "desc": "掌握rm,mv,cd,touch,cat等常用指令，熟练使用终端程序配置环境"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "workHistory": {
+                "title": "工作经历",
+                "item": [
+                    {
+                        "unit": {
+                            "period": "2022.10-2024.9",
+                            "company": "苏州彼立孚数据科技有限公司",
+                            "post": "软件测试工程师"
+                        },
+                        "experience": {
+                            "name": "主要经历",
+                            "desc": [
+                                "1.<b>配置：</b>根据产品要求，制定产品测试计划与流程，编写测试用例，配置测试环境；",
+                                "2.<b>测试：</b>以用户角度多方面、全覆盖测试产品，与设计、开发人员协作，执行测试；",
+                                "3.<b>Bug：</b>提交bug至PingCode综合管理，跟踪bug推动解决，进行回归测试；",
+                                "4.<b>对接：</b>对接用户，及时为客户答疑，协助客户高效使用产品；",
+                                "5.<b>提升：</b>站在用户角度为设计师、开发者贡献思路，提升产品易用性，提升用户体验；",
+                                "6.<b>数据：</b>使用ApiPost进行相关接口测试，编写SQL语句对MySQL数据库中的数据进行操作；",
+                                "7.<b>产品：</b>参与产品设计初期构思，加入测试干预，提供用户视角的建议。"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": {
+                            "period": "2021.11-2022.8",
+                            "company": "利穗技术(苏州)有限公司",
+                            "post": "软件测试工程师"
+                        },
+                        "experience": {
+                            "name": "经历简述",
+                            "desc": [
+                                "在DeltaV系统中执行软件单元测试、功能测试等工作",
+                                "参与多个项目，负责过单个项目从开发到测试到正式发布的整个流程"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": {
+                            "period": "2020.9-2021.3",
+                            "company": "苏州彩虹糖软件技术有限公司",
+                            "post": "输入法工程师"
+                        },
+                        "experience": {
+                            "name": "经历简述",
+                            "desc": [
+                                "百度输入法功能、特效制作",
+                                "对接百度负责人，对各个模块进行功能测试，缺陷修复等"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "删除personalityAbility": {
+                "title": "性格能力",
+                "item": [
+                    {
+                        "_tag": "personality",
+                        "name": "性格",
+                        "desc": [
+                            "乐观正直，沉着冷静，去繁求简，不拐弯抹角"
+                        ]
+                    },
+                    {
+                        "_tag": "ability",
+                        "name": "能力",
+                        "desc": [
+                            "自学能力强，掌握速度快，善于思考，沟通精简有效",
+                            "喜欢研究软件使用，自己制作工具，对创造性事物感兴趣"
+                        ]
+                    }
+                ]
+            },
+            "selfEvaluate": {
+                "title": "自我评价",
+                "item": [
+                    "◆乐观开朗，细心负责，有责任感；",
+                    "◆对待工作严谨认真，务实求真；",
+                    "◆有较强的独立思考分析能力，有效沟通；",
+                    "◆踏实刻苦，动手能力强，富有集体荣誉感；"
+                ]
+            }
+        },
+        "v1.0.1": {
+            "islink": {
+                "bool": false,
+                "url": ""
+            },
+            "headpic": {
+                "title": "陈本奇",
+                "src": "img/bk.png",
+                "alt": "Bencky Chan's Photo"
+            },
+            "personInfo": {
+                "title": "个人信息",
+                "item": [
+                    {
+                        "icon": "img/pj.png",
+                        "label": "姓名",
+                        "field": "name",
+                        "contents": {
+                            "value": "陈本奇",
+                            "sub": "Bencky Chan"
+                        }
+                    },
+                    {
+                        "icon": "img/sj.png",
+                        "label": "手机",
+                        "field": "phone",
+                        "content": "13402590968"
+                    },
+                    {
+                        "icon": "img/yx.png",
+                        "label": "邮箱",
+                        "field": "email",
+                        "content": "bencky1017@qq.com"
+                    },
+                    {
+                        "icon": "img/sr.png",
+                        "label": "生日",
+                        "field": "birthday",
+                        "content": "1998.10.17"
+                    },
+                    {
+                        "icon": "img/dw.png",
+                        "label": "现居",
+                        "field": "location",
+                        "content": "江苏省句容市洪武路"
+                    }
+                ]
+            },
+            "jobOrder": {
+                "title": "求职意向",
+                "item": {
+                    "icon": "",
+                    "label": "从事职业",
+                    "field": "phone",
+                    "content": "测试工程师"
+                }
+            },
+            "education": {
+                "title": "教育背景",
+                "item": [
+                    {
+                        "icon": "",
+                        "label": "学校名称",
+                        "field": "school",
+                        "content": "苏州科技大学天平学院"
+                    },
+                    {
+                        "icon": "",
+                        "label": "就读时间",
+                        "field": "period",
+                        "content": "2017.9-2021.7"
+                    },
+                    {
+                        "icon": "",
+                        "label": "所学专业",
+                        "field": "major",
+                        "content": "通信工程"
+                    },
+                    {
+                        "icon": "",
+                        "label": "学历学位",
+                        "field": "degree",
+                        "content": "本科（学信网）"
+                    }
+                ]
+            },
+            "personCreation": {
+                "title": "个人作品",
+                "item": [
+                    {
+                        "icon": "",
+                        "label": "HTML",
+                        "field": "",
+                        "content": "个人主页、网页导航、网页解密"
+                    },
+                    {
+                        "icon": "",
+                        "label": "C语言",
+                        "field": "",
+                        "content": "班级通讯录管理系统、EasyX图形化游戏界面"
+                    },
+                    {
+                        "icon": "",
+                        "label": "Python爬虫",
+                        "field": "",
+                        "content": "熊猫音效批量下载器，网易云音乐下载器GUI，壁纸爬虫"
+                    }
+                ]
+            },
+            "ending": {
+                "title": "结束语",
+                "content": "<b>感谢您百忙之中垂阅本人简历！</b>"
+            },
+            "honorSkills": {
+                "title": "荣誉技能",
+                "item": [
+                    {
+                        "icon": "",
+                        "label": "证书",
+                        "field": "",
+                        "content": "CET-4,计算机C语言二级(NCRE LEVEL2),“数创杯”大学组优秀奖等"
+                    },
+                    {
+                        "icon": "",
+                        "label": "荣誉",
+                        "field": "",
+                        "content": "获得过“优秀班干部”,“优秀团支书”,“校级二等奖学金”等"
+                    },
+                    {
+                        "icon": "",
+                        "label": "办公",
+                        "field": "",
+                        "content": "精通Word,Excel,PPT等办公软件，文档编写格式规范，风格统一"
+                    },
+                    {
+                        "icon": "",
+                        "label": "软件",
+                        "field": "",
+                        "content": "常用Git,Navicat,postman,ApiPost,微信开发者工具等软件进行项目测试、数据库管理、系统缺陷综合管理等"
+                    },
+                    {
+                        "icon": "",
+                        "label": "技能",
+                        "field": "",
+                        "contents": [
+                            {
+                                "label": "Python",
+                                "desc": "熟练运用requests,re,os,lxml,selenium等库，结合Chrome内核浏览器实现自动化测试功能"
+                            },
+                            {
+                                "label": "HTML5",
+                                "desc": "编写过H5网页，掌握页面基础编写结构、基础响应式适配，可以将系统缺陷问题快速反馈开发人员并进行复测"
+                            },
+                            {
+                                "label": "CSS",
+                                "desc": "了解flex布局,grid布局,过渡动画,多媒体查询等"
+                            },
+                            {
+                                "label": "jQuery/JS",
+                                "desc": "常用on,append,addClass,remove,find,html等方法实现交互功能"
+                            },
+                            {
+                                "label": "BAT/VBS",
+                                "desc": "熟练使用bat/vbs脚本编写一些快捷操作"
+                            },
+                            {
+                                "label": "数据库",
+                                "desc": "熟悉MySQL为主的数据库操作，编写SQL语句，进行数据正确性测试等"
+                            },
+                            {
+                                "label": "Linux",
+                                "desc": "掌握rm,mv,cp,cd,touch,cat等常用指令,了解简单的Shell编程"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "workHistory": {
+                "title": "工作经历",
+                "item": [
+                    {
+                        "unit": {
+                            "period": "2021.11-2022.8",
+                            "company": "利穗技术(苏州)有限公司",
+                            "post": "软件测试工程师"
+                        },
+                        "experience": {
+                            "name": "主要经历",
+                            "desc": [
+                                "1.根据客户要求，对非常规软件功能进行设计与逻辑控制",
+                                "2.参照定义文件，制定测试计划与测试用例，配置测试环境",
+                                "3.执行测试用例，提交bug至禅道；跟踪bug推动解决，并进行回归测试",
+                                "4.在DeltaV系统中进行相关的单元测试，集成测试，功能测试等",
+                                "5.参与多个项目，负责过单个项目从开发到测试到正式发布的整个流程",
+                                "6.编写SQL语句对MySQL、SQLserver等数据库中的数据进行操作"
+                            ]
+                        }
+                    },
+                    {
+                        "unit": {
+                            "period": "2020.9-2021.3",
+                            "company": "苏州彩虹糖软件技术有限公司",
+                            "post": "输入法工程师"
+                        },
+                        "experience": {
+                            "name": "主要经历",
+                            "desc": [
+                                "1.百度输入法制作，按照设计师要求制作特效、功能等",
+                                "2.对输入法各个模块进行功能测试，定位问题，解决问题",
+                                "3.与甲方负责人对接，根据甲方要求修改对应内容"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "personalityAbility": {
+                "title": "性格能力",
+                "item": [
+                    {
+                        "_tag": "personality",
+                        "name": "性格",
+                        "desc": [
+                            "乐观正直，沉着冷静，去繁求简，不拐弯抹角"
+                        ]
+                    },
+                    {
+                        "_tag": "ability",
+                        "name": "能力",
+                        "desc": [
+                            "自学能力强，掌握速度快，善于思考，沟通精简有效",
+                            "喜欢研究软件使用，自己制作工具，对创造性事物感兴趣"
+                        ]
+                    }
+                ]
+            },
+            "selfEvaluate": {
+                "title": "自我评价",
+                "item": [
+                    "◆乐观开朗，细心负责，有责任感；",
+                    "◆对待工作严谨认真，务实求真；",
+                    "◆有较强的独立思考分析能力，有效沟通；",
+                    "◆踏实刻苦，动手能力强，富有集体荣誉感；"
+                ]
+            }
+        },
+        "v1.0":{
+            "islink": {
+                "bool": true,
+                "url": "https://bencky1017.github.io/bencky-git/"
+            }
+        }
+    }
+}

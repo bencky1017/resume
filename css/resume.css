@@ -1,0 +1,232 @@
+.main{
+	border:2px solid #757575;
+	margin-left: 5%;
+	margin-top: 100px;
+		display: flex;
+	    flex-direction: row;
+		width: 1140px;
+		height: 1600px;
+}
+/*body{
+	 -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}*/
+
+/*打印删除*/
+@media print{
+	.no_print{
+		border:0px;
+		margin-left: 0;
+		margin-top: 0;
+			display: flex;
+		    flex-direction: row;
+			width: 1140px;
+			height: 1600px;
+	}
+	.version-switcher{
+		display: none;
+	}
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	/*position: absolute;*/
+	margin-top: 20px;
+	padding-top: 0px;
+	width: 100%;
+	height: 1800px;
+	/*background-color: #757581;*/
+}
+
+/* 版本控制 */
+.version-switcher {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 1000;
+}
+
+.version-switcher button {
+	padding: 8px 15px;
+	background: #2c3e50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.version-list {
+	display: none;
+	position: absolute;
+	background: white;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	width: 100px;
+}
+
+.version-list.show {
+	display: block;
+}
+
+.version-item {
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding: 8px;
+	cursor: pointer;
+	border-bottom: 1px solid #eee;
+	overflow: hidden;
+	transition: all 0.3s ease;
+    transform: translateX(0);
+}
+
+.version-item:hover {
+	background: #f5f5f5;
+	transform: translateX(5px);
+}
+
+.version-item.active {
+	background: #3498db;
+	color: white;
+	position: relative;
+}
+
+.version-item.active::after {
+	content: "✓";
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+	color: white;
+	font-weight: bold;
+}
+
+.headpic{
+	margin-left: 90px;
+	margin-top: 60px;
+	box-shadow: 5px 5px 10px #757575;
+}
+.headpic_title{
+	font-size: 36px;
+	letter-spacing: 20px;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-left: 80px;
+	margin-right: 60px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.lineHorizon{
+	width: 240px;
+	height: 2px;
+	margin-left: 62px;
+}
+.lineVertical{
+	display: inline-grid;
+	position: absolute;
+	margin: 50px 30px;
+	width: 2px;
+	height: 1470px;
+}
+.category{
+	margin: 50px 0px;/*上下 左右*/ 
+}
+.category table{
+	margin-left: 50px;
+}
+.category_info p{
+	position: relative;
+	font-size: 24px;
+	margin-left: 132px;
+	top: -22px;
+	width: 100px;
+	text-align:center;
+	background-color: #fff;
+}
+.infotable{
+	color: #336fac;
+	font-size: 18px;
+	font-weight: bold /*相当于normal(400)=700*/
+}
+.infotable img{
+	width: 30px;
+	height: 30px;
+}
+/* .work .fore{
+	color: #336fac;
+	font-size: 18px;
+	font-weight: bold
+} */
+.main-left{
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.main-right{
+	margin-top: 60px;
+	margin-left: 90px;
+}
+.project{
+	margin-top: 40px;
+	width: 600px;
+	font-size: 16px;/*右侧所有字体大小*/
+}
+.project_info p{
+	position: relative;
+	top: -28px;
+	transform: translateX(-50%);
+	font-size: 24px;
+	margin-left: 50%;
+	line-height: 50px;
+	width: 150px;
+	text-align:center;
+	color: #fff;
+	background-color: #336fac;
+}
+.prolineHorizon{
+	width: 600px;
+	height: 2px;
+}
+.projecttable{
+	font-size: 16px;
+}
+.fore{
+	/* width: 64px; */
+	width: 96px;
+	line-height: 26px;
+	font-weight: bold;
+}
+.fore_sub{
+	width: 80px;
+	text-align: right;
+	line-height: 24px;
+}
+.fore_sub+td{
+	line-height: 24px;
+}
+.loading{
+	width: 360px;
+	height: 12px;
+	border-radius: 6px;
+	line-height: 0;
+	background-color: #eee;
+}
+.progress{
+	display: inline-block;
+	height: 12px;
+	border-radius: 6px;
+}
+
+.workHistoryTable{
+	width: 600px;
+	border-spacing: 0px 10px;
+}
+.practice{		/*实习经历的表格*/
+	text-align: center;
+	width: 600px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #336fac;
+}
+.ending{
+	margin-left: 80px;
+}
