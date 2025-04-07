@@ -153,6 +153,18 @@
                 "item": [
                     {
                         "icon": "",
+                        "label": "B/S架构",
+                        "field": "",
+                        "content": "4年Web端、小程序端产品测试经验"
+                    },
+                    {
+                        "icon": "",
+                        "label": "测试文档",
+                        "field": "",
+                        "content": "独立编写测试计划、测试用例、测试报告等测试相关文档"
+                    },
+                    {
+                        "icon": "",
                         "label": "自动化测试",
                         "field": "",
                         "content": "Python（Selenium，Requests）编写自动化脚本"
@@ -167,7 +179,7 @@
                         "icon": "",
                         "label": "数据库",
                         "field": "",
-                        "content": "MySQL为主的数据库操作（SQL语句编写），Navicat"
+                        "content": "Navicat管理工具，熟悉MySQL为主的数据库操作，SQL语句编写"
                     },
                     {
                         "icon": "",
